@@ -30,8 +30,6 @@ if (isset($_GET['action'])) {
             $answer = $data->encode();
             break;
     }
-
-    echo $answer;
 } else {
     $data = Answer::error('Action not found');
     $answer = $data->encode();
