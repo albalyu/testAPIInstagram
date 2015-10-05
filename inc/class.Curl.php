@@ -17,7 +17,7 @@ class Curl
     private static function curlExec($query)
     {
         $ch = curl_init($query);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 15); // Таймаут 1 секунда
+        curl_setopt($ch, CURLOPT_TIMEOUT, 15); // Таймаут 15 секунд
         curl_setopt($ch, CURLOPT_HEADER, false);// Не выводить заголовки
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);// Возвращать результат, а не выводить его прямо в браузер
         $response = curl_exec($ch);
